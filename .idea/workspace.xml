@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c124ca-cdaf-4188-950e-3c4762741cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/presentation/FlightCosoleFormat.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/GetFlights.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/GetTickets.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/presentation/flight/FlightHTMLFormat.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_5_2023_11_15_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_5_2023_11_15_PM__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Flight.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Flight.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/presentation/Formatter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/presentation/Formatter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/presentation/FlightCosoleFormat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/presentation/flight/FlightCosoleFormat.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="Feature/Add_generics_and_Formaters" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +63,7 @@
       <recent name="mx.jsomven.domain.model.baggage.pack.regular" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="mx.jsomven.presentation.flight" />
       <recent name="mx.jsomven.domain.model.seat" />
     </key>
   </component>
