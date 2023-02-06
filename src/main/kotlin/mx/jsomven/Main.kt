@@ -1,9 +1,10 @@
-package mx.jsomven.domain
+package mx.jsomven
 
 import mx.jsomven.domain.model.AirCraft
 import mx.jsomven.domain.model.Airport
 import mx.jsomven.domain.model.AirportBooking
 import mx.jsomven.domain.model.Flight
+import mx.jsomven.presentation.FlightCosoleFormat
 import java.math.BigDecimal
 import java.time.LocalDateTime
 import java.time.Month
@@ -15,7 +16,7 @@ fun main() {
         price = BigDecimal(100.0),
         departureArrivalBooking = getAirportPair()
     )
-    val flightFormatted = flight.format()
+    val flightFormatted = FlightCosoleFormat().format(flight)
     println(flightFormatted)
 }
 
