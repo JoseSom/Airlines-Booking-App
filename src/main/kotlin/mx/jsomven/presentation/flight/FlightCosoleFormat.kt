@@ -1,4 +1,4 @@
-package mx.jsomven.presentation
+package mx.jsomven.presentation.flight
 
 import mx.jsomven.domain.model.Flight
 import mx.jsomven.domain.presentation.Formatter
