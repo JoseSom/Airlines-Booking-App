@@ -6,5 +6,5 @@ data class Seat(
     val number: String,
     val price: BigDecimal,
     val seatClass: SeatClass,
-    val seatStatus: SeatStatus
+    val seatStatus: SeatStatus = SeatStatus.AVAILABLE
 )
