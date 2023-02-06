@@ -1,4 +1,4 @@
-package mx.jsomven.presentation
+package mx.jsomven.presentation.ticket.formats
 
 import mx.jsomven.domain.model.Ticket
 import mx.jsomven.domain.presentation.Formatter
