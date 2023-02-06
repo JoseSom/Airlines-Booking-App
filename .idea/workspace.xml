@@ -5,34 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c124ca-cdaf-4188-950e-3c4762741cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirCraft.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Airline.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Airport.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirportBooking.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Flight.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Passenger.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Reservation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Ticket.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/BaggagePackage.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/BoardingTurn.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/Regular.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularBasic.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularClassic.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularPlus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubBasic.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubClasic.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubPlus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/VClub.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/BaggageType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/BigHand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/BoxPacked.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/Checked.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/Hand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/Seat.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatClass.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatSection.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/presentation/Formatter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirCraft.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirCraft.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Flight.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Flight.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Ticket.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Ticket.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +29,8 @@
         <option value="Kotlin Data Class" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -72,13 +52,13 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="mx.jsomven.domain.model.baggage.pack.regular" />
@@ -86,6 +66,20 @@
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="mx.jsomven.domain.model.seat" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mx.jsomven.domain.MainKt" />
+      <module name="Airlines_Booking_App.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
