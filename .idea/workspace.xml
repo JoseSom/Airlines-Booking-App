@@ -5,13 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c124ca-cdaf-4188-950e-3c4762741cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirCraft.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Airline.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Airport.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirportBooking.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Flight.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Passenger.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Reservation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Ticket.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/BaggagePackage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/BoardingTurn.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/Regular.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularBasic.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularClassic.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularPlus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubBasic.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubClasic.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubPlus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/VClub.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/BaggageType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/BigHand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/BoxPacked.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/Checked.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/type/Hand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/Seat.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatClass.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatSection.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatStatus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +44,26 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LLDE0C8uDRNxwEEHNu3Sb1hi4S" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -36,9 +75,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="mx.jsomven.domain.model.baggage.pack.regular" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="mx.jsomven.domain.model.seat" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
