@@ -5,7 +5,7 @@ import mx.jsomven.domain.model.seat.SeatClass
 import java.math.BigDecimal
 
 data class SeatSection(
+    val seatClass: SeatClass,
     val seats: Array<Seat>,
-    val price: BigDecimal,
-    val seatClass: SeatClass
+    val price: BigDecimal
 )

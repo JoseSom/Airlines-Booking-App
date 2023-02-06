@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c124ca-cdaf-4188-950e-3c4762741cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/baggage/GetBaggagePackage.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/flight/GetFlightSaved.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/reservation/AssignTicketToReservation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/reservation/GetReservation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/seat/GetSeatsSection.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/ticket/AsiggBaggagePackToTicket.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/ticket/AssignFlightToTicket.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/ticket/AssignPassengerToTicket.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/ticket/AssignSeatToTicket.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/aircraft/AirCraftLocalSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/airport/AirportLocalSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/airportbook/AirportBookingLocalSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/flight/FlightLocalSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/aircraft/AirCraftDataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/airport/AirportDataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/airportbook/AirportBookingDataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/flight/FlightDataSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2023_4_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2023_4_23_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirCraft.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirCraft.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/GetFlights.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/flight/GetFlights.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/Seat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/Seat.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatSection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatSection.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,7 @@
         <option value="package-info" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Enum" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -57,17 +58,17 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="mx.jsomven.domain.model.baggage.pack.regular" />
@@ -88,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
