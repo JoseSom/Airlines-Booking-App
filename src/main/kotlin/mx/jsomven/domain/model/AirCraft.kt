@@ -5,6 +5,6 @@ import mx.jsomven.domain.model.seat.SeatSection
 data class AirCraft(
     val name: String,
     val model: String,
-    val airline: Airline = Airline("VL","Volarios")
-    //val seatSections: Map<Int, SeatSection>,
+    val airline: Airline = Airline("VL","Volarios"),
+    val seatSections: List<SeatSection>
 )
