@@ -9,20 +9,20 @@ import mx.jsomven.data.flight.FlightLocalSource
 import mx.jsomven.data.ticket.TicketListSingleton
 import mx.jsomven.domain.datasource.baggage.BaggagePackageDataSource
 import mx.jsomven.domain.usecases.baggage.GetBaggagePackage
+import mx.jsomven.domain.usecases.flight.GetFlightSaved
 import mx.jsomven.domain.usecases.flight.GetFlights
+import mx.jsomven.domain.usecases.flight.di.FlightDataDI
 import mx.jsomven.domain.usecases.ticket.AssignFlightToTicket
+import mx.jsomven.domain.usecases.ticket.di.TicketDataDI
 import mx.jsomven.presentation.baggage.BaggagePackageConsole
 import mx.jsomven.presentation.baggage.types.BaggageTypesConsole
 import mx.jsomven.presentation.flight.formats.FlightCosoleFormat
 import java.time.Month
 
 fun main() {
-    val airportDataSource = AirportLocalSource()
-    val airportBookingLocalSource = AirportBookingLocalSource(airportDataSource)
-    val airCraftLocalSource = AirCraftLocalSource()
+    val ticketData = TicketDataDI().providesTicketsData()
 
-    val flightLocal = FlightLocalSource(airCraftLocalSource, airportBookingLocalSource)
-    val getFlights = GetFlights(flightLocal).invoke(Month.JANUARY)
+    val getFlights = GetFlights(FlightDataDI().providesFlightsData()).invoke(Month.JANUARY)
     getFlights.forEach { (t, u) ->
         print("$t. ")
         println(FlightCosoleFormat().format(u))
@@ -44,11 +44,11 @@ fun main() {
 
     println()
     println("*** Flight Selected ***")
-    val ticketSingleton = TicketListSingleton()
-    val flight = getFlights[1]
-    AssignFlightToTicket(ticketSingleton).invoke(flight)
 
-    val flightSelected = ticketSingleton.tickets.first().flight
+    val flight = getFlights[1]
+    AssignFlightToTicket(ticketData).invoke(flight)
+
+    val flightSelected = GetFlightSaved(ticketData).invoke()
     println(
         FlightCosoleFormat().format(flightSelected)
     )
