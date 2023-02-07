@@ -1,34 +1,32 @@
 package mx.jsomven
 
-import mx.jsomven.data.aircraft.AirCraftLocalSource
-import mx.jsomven.data.airport.AirportLocalSource
-import mx.jsomven.data.airportbook.AirportBookingLocalSource
 import mx.jsomven.data.baggage.BaggageRegularLocalSource
 import mx.jsomven.data.baggage.BaggageVClubLocalSource
-import mx.jsomven.data.flight.FlightLocalSource
-import mx.jsomven.data.ticket.TicketListSingleton
 import mx.jsomven.domain.datasource.baggage.BaggagePackageDataSource
+import mx.jsomven.domain.model.Flight
 import mx.jsomven.domain.usecases.baggage.GetBaggagePackage
 import mx.jsomven.domain.usecases.flight.GetFlightSaved
 import mx.jsomven.domain.usecases.flight.GetFlights
 import mx.jsomven.domain.usecases.flight.di.FlightDataDI
 import mx.jsomven.domain.usecases.ticket.AssignFlightToTicket
 import mx.jsomven.domain.usecases.ticket.di.TicketDataDI
+import mx.jsomven.presentation.PresentationFormat
 import mx.jsomven.presentation.baggage.BaggagePackageConsole
 import mx.jsomven.presentation.baggage.types.BaggageTypesConsole
+import mx.jsomven.presentation.flight.FlightPresentationFactory
 import mx.jsomven.presentation.flight.formats.FlightCosoleFormat
+import mx.jsomven.presentation.menu.UIMenu
 import java.time.Month
 
 fun main() {
+    val format = PresentationFormat.CONSOLE
+    val flightPresentation = FlightPresentationFactory().getPresentationFormat(format)
     val ticketData = TicketDataDI().providesTicketsData()
+    val flightData = FlightDataDI().providesFlightsData()
 
-    val getFlights = GetFlights(FlightDataDI().providesFlightsData()).invoke(Month.JANUARY)
-    getFlights.forEach { (t, u) ->
-        print("$t. ")
-        println(FlightCosoleFormat().format(u))
-    }
-
-    println()
+    val uiMenuFlight = object : UIMenu<Flight> {}
+    val flightsMap = GetFlights(flightData).invoke(Month.JANUARY)
+    val flightSelected = uiMenuFlight.showMenu(flightsMap, flightPresentation)
 
     val vClubLocalSource = BaggageVClubLocalSource()
     val getVClubPackages = GetBaggagePackage(vClubLocalSource).invoke()
@@ -36,21 +34,10 @@ fun main() {
     val regularLocalSource = BaggageRegularLocalSource()
     val getRegularPackages = GetBaggagePackage(regularLocalSource).invoke()
 
-    println("*** VClub Baggage's ***")
-    printBaggagePacksConsole(regularLocalSource)
-    println()
-    println("*** Regular Baggage's ***")
-    printBaggagePacksConsole(vClubLocalSource)
-
-    println()
-    println("*** Flight Selected ***")
-
-    val flight = getFlights[1]
-    AssignFlightToTicket(ticketData).invoke(flight)
-
-    val flightSelected = GetFlightSaved(ticketData).invoke()
+    AssignFlightToTicket(ticketData).invoke(flightSelected)
+    val flightSaved = GetFlightSaved(ticketData).invoke()
     println(
-        FlightCosoleFormat().format(flightSelected)
+        FlightCosoleFormat().format(flightSaved)
     )
 }
 
