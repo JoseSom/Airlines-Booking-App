@@ -6,10 +6,15 @@ import mx.jsomven.domain.presentation.Formatter
 import java.math.BigDecimal
 import java.time.format.DateTimeFormatter
 
-data class Ticket(
-    val flight: Flight,
-    val passenger: Passenger,
-    val baggagePackage: BaggagePackage,
-    val seat: Seat,
-    val totalPrice: BigDecimal = flight.price + baggagePackage.price + seat.price
-)
+class Ticket {
+    lateinit var flight: Flight
+    lateinit var passenger: Passenger
+    lateinit var baggagePackage: BaggagePackage
+    lateinit var seat: Seat
+    val totalPrice: BigDecimal
+        get() {
+            return if (this::flight.isInitialized)
+                flight.price + baggagePackage.price + seat.price
+            else BigDecimal(0)
+        }
+}
