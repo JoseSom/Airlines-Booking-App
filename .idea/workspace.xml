@@ -5,19 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c124ca-cdaf-4188-950e-3c4762741cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/aircraft/AirCraftLocalSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/airport/AirportLocalSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/airportbook/AirportBookingLocalSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/flight/FlightLocalSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/aircraft/AirCraftDataSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/airport/AirportDataSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/airportbook/AirportBookingDataSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/flight/FlightDataSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2023_4_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2023_4_23_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/baggage/BaggagePackageLocalSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/baggage/BaggageRegularLocalSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/baggage/BaggageVClubLocalSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/baggage/BaggagePackageDataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/presentation/baggage/BaggagePackgaeConsole.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/presentation/baggage/types/BaggageTypesConsole.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2023_5_22_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2023_5_22_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirCraft.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/AirCraft.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/Seat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/Seat.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatSection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/seat/SeatSection.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularClassic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularClassic.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularPlus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/regular/RegularPlus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubBasic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubBasic.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubClasic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubClassic.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubPlus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/ClubPlus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/VClub.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/baggage/pack/vclub/VClub.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/baggage/GetBaggagePackage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/baggage/GetBaggagePackage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/flight/GetFlightSaved.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/flight/GetFlightSaved.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/flight/GetFlights.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/flight/GetFlights.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/seat/GetSeatsSection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/seat/GetSeatsSection.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Feature/Add_generics_and_Formaters" />
+        <entry key="$PROJECT_DIR$" value="Feature/Add_data_and_datasource" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

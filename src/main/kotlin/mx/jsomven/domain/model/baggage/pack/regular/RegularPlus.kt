@@ -8,5 +8,5 @@ class RegularPlus(
 ) : Regular(price) {
     override val name: String = "Plus"
     override val boardingTurn: BoardingTurn = BoardingTurn.END
-
+    override var price: BigDecimal = price + BigDecimal(20)
 }
