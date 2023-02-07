@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c124ca-cdaf-4188-950e-3c4762741cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/data/ticket/TicketListSingleton.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/datasource/ticket/TicketDataSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Ticket.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/model/Ticket.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/ticket/AsiggBaggagePackToTicket.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mx/jsomven/domain/usecases/ticket/AsiggBaggagePackToTicket.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2023_6_44_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2023_6_44_PM__Changes_.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
